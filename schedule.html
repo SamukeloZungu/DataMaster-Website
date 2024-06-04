@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Schedule</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+   <!-- Swiper JS CSS-->
+<link rel="stylesheet" href="../css/swiper-bundle.min.css">
+
+<!-- Scroll Reveal -->
+<link rel="stylesheet" href="../css/scrollreveal.min.js">
+
+<!-- Boxicons -->
+<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    
+
+
+    <link rel="stylesheet" href="../css/schedule.css">
+
+</head>
+<body>
+<!-- Header -->
+<header class="header">
+       
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+      
+        <div class="logo-content flex">
+          <a href="index.html">
+            <img src="../images/Revamped Logo_page-0001.png" alt="" class="home-img">
+          </a>
+        </div>
+      
+        <ul>
+          <li><a  href="index.html" >Home</a></li>
+          <li><a href="features.html" >How To work</a></li>
+                    <li><a href="service.html" >Services</a></li>
+          <li><a href="contactUs.html">Contact</a></li>
+        </ul>
+
+        <div>
+            <a class="btn btn-primary demoBTN" href="schedule.html">Schedule a Demo</a>
+          </div>
+      </nav>
+            
+
+</header>
+
+<main>
+    <section class="demoTitle">
+        <div class="demoDiv">
+            <h1>View Demo</h1>
+        </div>
+    </section>
+
+<br><br>
+    <section>
+        <div class="container">
+            <h2>Demo Request Form</h2>
+            <br>
+            <form action="schedule.php" method="post">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="surname">Surname:</label>
+                        <input type="text" id="surname" name="surname" class="form-control" required>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="company">Company:</label>
+                        <input type="text" id="company" name="company" class="form-control" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" class="form-control" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="demoDate">Preferred Date for Demo:</label>
+                        <input type="date" id="demoDate" name="demoDate" class="form-control" required>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="demoTime">Preferred Time for Demo:</label>
+                        <input type="time" id="demoTime" name="demoTime" class="form-control" required>
+                    </div>
+                </div>
+    
+                <button type="submit" class="btn btn-primary" name="send">Submit Request</button>
+        
+            <p>By submitting this form, you agree to our <a href="#">Privacy Policy</a>.</p>
+        </div>
+    </section>
+
+<br><br>
+       <!-- Footer Section -->
+       <footer>
+        <a href="#" class="icon icon-youtube fab fa-youtube"></a><!-- YouTube icon -->
+        <a href="#" class="icon icon-facebook fab fa-facebook"></a><!-- Facebook icon -->
+        <a href="#" class="icon icon-x">X</a><!-- Placeholder "X" icon -->
+        <a href="#" class="icon icon-instagram fab fa-instagram"></a>
+        <br><br>
+        <p>
+           &copy;DataMaster @2023-Privacy Policy
+        </p>
+      </footer>
+    
+    
+</main>
+<script>
+        
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuCheckbox = document.getElementById('check');
+        const body = document.querySelector('body');
+        const menuButton = document.querySelector('.checkbtn');
+        const closeButton = document.querySelector('.closebtn');
+    
+        menuButton.addEventListener('click', function() {
+            body.classList.toggle('menu-open');
+            menuCheckbox.checked = !menuCheckbox.checked; // Toggle the checkbox state
+        });
+    
+        closeButton.addEventListener('click', function() {
+            body.classList.remove('menu-open');
+            menuCheckbox.checked = false; // Set the checkbox state to false (unchecked)
+        });
+    });
+    
+        </script>
+</body>
+</html>

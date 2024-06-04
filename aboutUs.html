@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="enu">
+<head>
+
+    <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>Contact us</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+        <!-- Swiper JS CSS-->
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+
+    <!-- Scroll Reveal -->
+    <link rel="stylesheet" href="../css/scrollreveal.min.js">
+
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/news.css">
+
+        <link rel="stylesheet" href="../css/aboutUs.css">
+</head>
+
+
+<body class="menu-closed">
+    <header class="header" id="header">
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+      
+        <div class="logo-content flex">
+          <a href="index.html">
+            <img src="../images/Revamped Logo_page-0001.png" alt="" class="home-img">
+          </a>
+        </div>
+      
+        <ul>
+          <li><a  href="index.html" >Home</a></li>
+          <li><a href="features.html" >How To work</a></li>
+                    <li><a href="service.html" >Services</a></li>
+          <li><a class="active" href="contactUs.html">Contact</a></li>
+        </ul>
+
+        <div>
+            <a class="btn btn-primary demoBTN" href="schedule.html">Schedule a Demo</a>
+          </div>
+      </nav>
+            
+
+</header>
+<main>
+
+<!-- Design Section for About DataMaster -->
+<section class="contactUs section" id="conUsSection">
+    <div class="DesignSection d-flex flex-column align-items-center justify-content-center text-center">
+        <i class="fas fa-info-circle fa-3x mb-3"></i> <!-- About icon -->
+        <h1>About DataMaster</h1>
+        <p>Find out more about us!</p>
+        <button class="btn btn-primary ContactUs">Read More</button>
+    </div>
+</section>
+
+
+<!-- About Section -->
+<section class="section about" id="about">
+    <div class="about-content container">
+        <div class="about-imageContent">
+            <img src="../images/DasterScreen.png" alt="" class="about-img">
+
+        </div>
+
+        <div class="about-details">
+            <div class="about-text">
+                <h4 class="content-subtitle"><i>About DATAMASTER</i></h4>
+                <h2 class="content-title">What is DATAMASTER ?</h2>
+                       <p class="content-description">
+                        DATAMASTER offers an attractive and easy-to-use interface that takes advantage of leaving a positive and lasting impression on your visitors. Our solution is a technological 
+                        innovation intended to streamline business efficiency with a highly customizable workflow to perfectly suit your brand 
+                        and reception needs. A visitor management system helps your workplace thrive. 
+                        Customizable to your business, with built-in data collection and security features.
+                      </p>
+                     
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+    <!-- Footer Section -->
+    <footer>
+        <a href="#" class="icon icon-youtube fab fa-youtube"></a><!-- YouTube icon -->
+        <a href="#" class="icon icon-facebook fab fa-facebook"></a><!-- Facebook icon -->
+        <a href="#" class="icon icon-x">X</a><!-- Placeholder "X" icon -->
+        <a href="#" class="icon icon-instagram fab fa-instagram"></a>
+        <br><br>
+        <p>
+           &copy;DataMaster @2023-Privacy Policy
+        </p>
+      </footer>
+
+
+    <!-- Scroll Up -->
+    <a href="#conUsSection" class="scrollUp-btn flex">
+        <i class='bx bx-up-arrow-alt scrollUp-icon'></i>
+    </a>
+<!-- Swiper JS -->
+<script src="../js/swiper-bundle.min.js"></script>
+
+<!-- Scroll Reveal -->
+<script src="../js/scrollreveal.js"></script>
+
+<!-- JavaScript -->
+    <script src="../js/script.js"></script>
+
+    <script>
+        
+document.addEventListener('DOMContentLoaded', function() {
+    const menuCheckbox = document.getElementById('check');
+    const body = document.querySelector('body');
+    const menuButton = document.querySelector('.checkbtn');
+    const closeButton = document.querySelector('.closebtn');
+
+    menuButton.addEventListener('click', function() {
+        body.classList.toggle('menu-open');
+        menuCheckbox.checked = !menuCheckbox.checked; // Toggle the checkbox state
+    });
+
+    closeButton.addEventListener('click', function() {
+        body.classList.remove('menu-open');
+        menuCheckbox.checked = false; // Set the checkbox state to false (unchecked)
+    });
+});
+
+    </script>
+</body>
+</html>
